@@ -11,4 +11,7 @@ class MainController extends Controller
     public function mostrarValores($valor1, $valor2){
         echo "valor1: ".$valor1." valor2: ".$valor2;
     }
+    public function mostrarValorOpcional($value1 = null){
+        echo "$value1";
+    }
 }
