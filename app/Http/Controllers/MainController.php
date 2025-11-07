@@ -8,8 +8,6 @@ use Illuminate\Contracts\View\View;
 class MainController extends Controller
 {
     public function showView():View{
-
-        return view('admin.newPage', ['value' => 50]);
-
+        return view('admin.newPage', ['value' => 300]);
     }
 }

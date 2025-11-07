@@ -1,22 +1,16 @@
 <div>
     {{-- instrução if simples --}}
-@if($value == 100)
-    <h2>{{$value}} Graus</h2>
-@endif
-
-
-@if($value == 200)
-    <h2>{{$value}} Graus</h2>
-@else
-<h2>Não é 1000 Grau</h2>
-@endif
-
-
-@if($value < 50)
-<h2>menor que 50</h2>
-@elseif($value > 50)
-<h2>maior que 50</h2>
-@elseif($value == 50)
-<h2>igual a 50</h2>
-@endif
+@switch($value)
+    @case(100)
+        <h1>é igual a 100 </h1>    
+        @break
+     @case(200)
+        <h1>é igual a 200 </h1>    
+        @break
+     @case(300)
+        <h1>é igual a 300 </h1>    
+        @break
+     @default
+        <h1>Outro<h1>    
+@endswitch
 </div>
