@@ -1,5 +1,6 @@
 <div>
-   <h1>new Page 1</h1>
-   <h3>{{ $name }}</h3>
-   <h4>{{ $phone }}</h4>
+    {{-- instrução if simples --}}
+@if($value == 100)
+    <h2>{{$value}} Graus</h2>
+@endif
 </div>
