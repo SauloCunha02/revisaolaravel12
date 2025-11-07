@@ -1,9 +1,7 @@
 <div>
     {{-- instrução if simples --}}
-    {{--Verifica se a variavel está vazia ou nula--}}
-@empty($value)
-    <h1>Vazio</h1>
-@else
-    <h1>Existe</h1>
-@endempty
+    {{--Se a condição for falsa executa--}}
+@unless($value < 100)
+    <h1>OK</h1>
+@endunless
 </div>
