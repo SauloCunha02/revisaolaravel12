@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Contracts\View\View;
+
 
 class MainController extends Controller
 {
-    public function mostrarValor($valor){
-        echo $valor;
-    }
-    public function mostrarValores($valor1, $valor2){
-        echo "valor1: ".$valor1." valor2: ".$valor2;
-    }
-    public function mostrarValorOpcional($value1 = null){
-        echo "$value1";
+    public function showView():View{
+         $data = [
+            'name' => "Saulo",
+            'phone' => "8822331122"
+         ];
+        return view('admin.newPage', $data);
     }
 }
